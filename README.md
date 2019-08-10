@@ -1,1 +1,1 @@
-# codesignal algorithms with provlem description and PHP solution
+# CodeSignal (CodeFights) algorithms with problem description and solutions in PHP and Javascript.
