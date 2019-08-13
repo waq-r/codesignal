@@ -1,3 +1,6 @@
+<h2>reverseInParentheses</h2>
+<a href="https://www.codesignal.com/">www.codesignal.com</a>
+<hr />
 <div><p>Write a function that reverses characters in (possibly nested) parentheses in the input string.</p>
 <p>Input strings will always be well-formed with matching <code>()</code>s.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
