@@ -1,4 +1,4 @@
-<h2>Array Maximal Adjacent Difference</h2>
+<h2>IS IPv4 Address</h2>
 <p>source: <a href="https://www.codesignal.com/">codesignal.com</a></p>
 <div class="markdown"><p>An IP address is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication. There are two versions of the Internet protocol, and thus two versions of addresses. One of them is the <a href="keyword://ipv4-address" target="_blank">IPv4 address</a>.</p>
 <p>Given a string, find out if it satisfies the IPv4 address naming rules.</p>
