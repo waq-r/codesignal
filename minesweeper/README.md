@@ -1,5 +1,5 @@
 <h2>Minesweeper</h2>
-<a href="https://www.codesignal.com/">www.codesignal.com</a>
+<p>Source: <a href="https://www.codesignal.com/">www.codesignal.com</a></p>
 <div><p>In the popular <strong>Minesweeper</strong> game you have a board with some mines and those cells that don't contain a mine have a number in it that indicates the total number of mines in the neighboring cells. Starting off with some arrangement of mines we want to create a <strong>Minesweeper</strong> game setup.</p>
 <p><span style="color:#44BFA3;font-size:1.4em">Example</span></p>
 <p>For</p>
@@ -13,7 +13,7 @@
                        [1, 1, 1]]
 </code></pre>
 <p>Check out the image below for better understanding:</p>
-<p><a href="https://codesignal.s3.amazonaws.com/tasks/minesweeper/img/example.png?_tm=1551538408843"></a>Minesweeper Image</p>
+<p><a href="https://codesignal.s3.amazonaws.com/tasks/minesweeper/img/example.png?_tm=1551538408843">Minesweeper Image</a></p>
 <p><span style="color:#44BFA3;font-size:1.4em">Input/Output</span></p>
 <ul>
 <li>
