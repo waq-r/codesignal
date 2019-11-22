@@ -29,19 +29,15 @@ Array of the longest strings, stored in the same order as in the inputArray.
 */
 
 function allLongestStrings($inputArray) {
-    $lengths = array_map(strlen, $inputArray);
-    arsort($lengths);
-
     
-    //print_r($lengths);
-    $output = array();
-    foreach($lengths as $k=>$v){
-         if($v < max($lengths)){
-            break;
+    $max = max(array_map(strlen, $inputArray));
+
+    foreach($inputArray as $k=>$v){
+        
+         if(strlen($v) < $max){
+            unset($inputArray[$k]);
         }
-        $output[$k] = $inputArray[$k];
     }
-    ksort($output);
-    // print_r($output);
-    return array_values($output);
+    
+    return array_values($inputArray);
 }
