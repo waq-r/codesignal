@@ -7,20 +7,12 @@ Given two strings, find the number of common characters between them.
 */
 
 function commonCharacterCount($s1, $s2) {
-    $s1Characters = array_count_values(str_split($s1));
-    $s2Characters = array_count_values(str_split($s2));
     
-    $characterCount = array();
-    foreach($s1Characters as $key=>$value){
-
-        if($value < $s2Characters[$key]){
-        $characterCount[$key] = $value;
-        }
-        else {
-           $characterCount[$key] = $s2Characters[$key]; 
-        }
-        
+    $s2len = strlen($s2);
+    
+    foreach(str_split($s1) as $k=>$v){
+        $s2 = preg_replace("/$v/", '', $s2, 1);
     }
-
-    return array_sum($characterCount);
+    
+    return $s2len - strlen($s2);
 }
