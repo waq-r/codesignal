@@ -7,26 +7,16 @@ Some people are standing in a row in a park. There are trees between them which 
 */
 
 function sortByHeight($a) {
-$sortedPeopleWithTrees = $a;
-    sort($sortedPeopleWithTrees);
-    foreach($sortedPeopleWithTrees as $people){
-        if($people === -1){
-           array_shift($sortedPeopleWithTrees);
-        }
+    
+    $s = array_filter($a, function($v){ return $v != -1;});
+    sort($s);
+    
+    foreach($a as $k=>$v){
+        if($v === -1){ continue; }
+        
+        $a[$k] = array_shift($s);
     }
     
-    $index = 0;
-    $sortedRow = array();
-    foreach($a as $element){
-        if($element === -1){
-            $sortedRow[] = -1;
-            continue;
-        }
-        
-        $sortedRow[] = $sortedPeopleWithTrees[$index];
-        $index++;
-        
-    }
-    
-    return $sortedRow;
+    return $a;
+
 }
