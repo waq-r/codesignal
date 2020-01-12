@@ -1,3 +1,5 @@
+<?php
+
 function buildPalindrome($st) {
     $i = 0;
     $oldSt = $st;
