@@ -9,12 +9,8 @@ Given a even ticket number n, determine if it's lucky or not.
 */
 
 function isLucky($n) {
-    $ticketNumberArray = str_split($n);
-    $bothHalves = array_chunk($ticketNumberArray, sizeof($ticketNumberArray)/2);
     
-    if(array_sum($bothHalves[0]) === array_sum($bothHalves[1])) {
-        return true;
-    }
+    $n = array_chunk(str_split($n), strlen((string)$n)/2);
     
-     return false;
+    return array_sum($n[0]) === array_sum($n[1]);
 }
